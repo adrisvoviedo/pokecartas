@@ -1,1 +1,142 @@
-/* Aquí va el CSS */
+@font-face {
+  font-family: "Pokemon GB";
+  src: url("Pokemon_GB.woff") format("woff");
+}
+
+* {
+  font-family: "Press Start 2P";
+  /* font-family: "Pokemon GB"; */
+}
+
+body {
+  background-image: url(/img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  color: rgb(223, 14, 24);
+}
+
+.titulo > * {
+  font-size: 57px;
+}
+
+.titulo > :last-child {
+  transform: rotatex(180deg);
+  mask-image: linear-gradient(transparent 10%, rgb(223, 14, 24) 70%);
+  -webkit-mask-image: linear-gradient(transparent 10%, rgb(223, 14, 24) 70%);
+  opacity: 75%;
+}
+
+.contenedorCartas {
+  margin-left: 7%;
+}
+
+.carta {
+  border-radius: 12px;
+  aspect-ratio: 8/12;
+  padding: 15px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.fuego {
+  background: linear-gradient(
+    to bottom,
+    rgba(245, 49, 15, 0.8) 60%,
+
+    rgba(255, 225, 0)
+  );
+
+  border: 8px solid rgba(250, 176, 18, 0.822);
+}
+
+.planta {
+  background: linear-gradient(
+    to bottom,
+    rgba(6, 163, 6, 0.8) 60%,
+
+    rgba(132, 255, 0, 0.842)
+  );
+  background-color: rgba(6, 163, 6, 0.692);
+  background: linear-gradient();
+  border: 8px solid greenyellow;
+}
+
+.agua {
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 5, 192, 0.8) 60%,
+
+    rgba(100, 255, 255)
+  );
+  border: 8px solid rgba(20, 106, 235, 0.76);
+}
+
+.electrico {
+  background: linear-gradient(
+    to bottom,
+    rgba(226, 206, 21, 0.8) 60%,
+    rgb(255, 253, 135)
+  );
+
+  border: 8px solid yellow;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.nombre {
+  display: inline-block;
+  font-size: large;
+  max-width: 50px;
+}
+
+.vida {
+  padding-left: 20px;
+  font-size: smaller;
+}
+
+.imagenes {
+  margin-top: 10px;
+  background-image: url(./img/pokemon-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon {
+  width: 300px;
+  aspect-ratio: 4/3;
+}
+
+.habilidades {
+  margin-top: 30px;
+}
+
+.habilidades h2 {
+  font-size: medium;
+}
+
+.habilidades ul {
+  font-size: smaller;
+}
+
+.habilidades li {
+  margin-bottom: 5px;
+}
